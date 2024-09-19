@@ -1,0 +1,610 @@
+.body {
+    margin: 0;
+}
+.main-container {
+    display: flex;
+    width: 100%; 
+    flex-direction: row; 
+    padding-bottom: 80px;
+    margin: 0;
+}
+.InstagramContainerMobile {
+    display: none;
+}
+.main-content { 
+    width: 100%;
+    font-family: 'instrument', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 22px;
+   
+}
+.follow-header {
+    max-width: 630px;
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.follow-header span {
+    margin-right: 20px;
+}
+/*Sidebar*/
+.sidebar{ 
+    width: 320px; 
+    height: 100%;
+    border-right: 1px solid #d5d5d5;;
+}
+.iconList{  
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    padding-left: 30px;
+}
+.InstagramContainer {
+    display:flex;
+    align-items: center;
+    padding: 18px 0;
+}
+.iconContainer  {
+    display:flex;
+    align-items: center;
+    padding: 18px 0;
+}
+.iconContainerMobile{
+    display:flex;
+    align-items: center;
+    padding: 16px 0;
+}
+.iconContainerMobile:hover {
+    width: 200px;
+    background-color:#ededed;
+    border: unset;
+    border-radius: 0 25px 25px 0;
+    outline: none;
+    padding: 14px;  
+}
+.iconContainer:hover {
+    width: 200px;
+    background-color:#ededed;
+    border: unset;
+    border-radius: 0 25px 25px 0;
+    outline: none;
+    padding: 14px;  
+}
+.Instagram {
+  display: none;
+}
+.InstagramText {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    font-family: 'Cookie', sans-serif;
+    font-size: 36px;
+}
+.icon {
+    width: 24px;
+    height: 24px;  
+}
+.iconText {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    font-family: 'instrument', sans-serif;
+    }
+
+.profile {
+    width: 24px;
+    height: 24px;
+}
+.ProfilText {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px; 
+    font-family: 'instrument', sans-serif;
+}
+.burger {
+    position: fixed;
+    bottom: 80px;
+    display: flex; 
+    align-items: center; 
+}
+/* Followed Profile */
+.followed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 630px;
+    width: 100%;
+    height: 100px;
+    padding:10px 50px 10px 50px;
+}
+.profileContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    opacity: 1;
+}
+.profileContainer:hover {
+    opacity:0.8;
+    transition: opacity 0.3s ease-in-out; 
+}
+.followerProfile   { 
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, orange);
+    border: 0.5px solid transparent;  
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+}
+
+.name {
+    font-size: 14px;
+}
+ 
+/*Postings*/ 
+.post-container { 
+    max-width: 630px;
+    width: 100%;
+    display: block;
+    padding:10px 80px 10px 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.post-header {
+    cursor: pointer;
+    width: 470px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.profileName {
+    font-weight: bold;
+}
+.post-header .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-header .profile {
+    font-weight: bold;
+}
+.post-content {
+    width: 470px;
+    max-width: 100%;
+    object-fit: cover; 
+    height: 500px; 
+}
+.post-image {
+    width: 470px;
+    max-width: 100%;
+    object-fit: cover; 
+    height: 500px; 
+}
+
+/*post-actions (like Button)*/
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+.post-actions-left {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.post-icons-left {
+    width: 100%;
+}
+.post-icons-right { 
+    display: flex;
+    align-items: flex-end; 
+    padding: 10px;
+}
+.bookmark {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: none; 
+    background: none; 
+    padding: 0;
+}
+.postIcon {
+    width: 30px;
+    height: 30px; 
+    margin-right: 10px;
+    cursor: pointer; 
+}
+.post-comment {
+    padding: 10px; 
+    font-size: 14px;
+}
+
+/*Kommentare*/
+ .showComment {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; 
+}
+.comment-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.add-comment {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc; 
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px; 
+}
+.commentInput { 
+    flex: 1;
+    cursor: pointer;
+    font-family: 'instrument', sans-serif;
+    resize: vertical;
+    height: 50px;
+    max-height: 200px;
+    padding: 8px 0 8px 8px; 
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    word-wrap: break-word; 
+    margin-right: 5px; 
+} 
+
+.add-comment button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: -15px;
+    cursor: pointer;
+    align-self: center;
+}
+.add-comment img {
+    width: 12px;
+    height: 12px;
+}
+
+.commentIcon {
+    width: 12px;
+    height: 12px;
+}
+
+.ownProfileContainer { 
+    font-family: 'instrument', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+    gap: 20px;
+
+}
+.profileContainer { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+.profileImage {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+.suggestions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1264px) {
+.InstagramContainerMobile {
+    display: block;
+    cursor: pointer; 
+}
+.InstagramTextMobile {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    font-family: 'Cookie', sans-serif;
+    font-size: 42px;
+}
+.sidebar{ 
+    width: 70px; 
+}
+.iconList{   
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 0; 
+}
+.iconContainerMobile {
+    cursor: pointer;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.iconContainer  { 
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display: block;
+}
+.iconContainerMobile:hover {
+    width: 20px;
+    background-color:#ededed;
+    border: unset;
+    border-radius: 50px;
+    outline: none;
+    padding: 14px;    
+}
+.iconContainer:hover {
+    width: 20px;
+    background-color:#ededed;
+    border: unset;
+    border-radius: 50px;
+    outline: none;
+    padding: 14px;  
+}
+.iconText {
+    display: none;
+}
+.profileContainer {
+    flex-direction: column;
+}
+.ProfilText {
+    display: none;
+}
+.InstagramContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 20px;
+}
+.Instagram {
+    display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px; 
+}
+.InstagramText {
+    display: none;
+}
+
+.ownProfileContainer { 
+    display: none;
+}
+.followed { 
+    gap: 20px;
+}
+}
+
+@media (max-width: 768px) {
+.main-content {
+    padding-top: 0; 
+    }
+.post-container { 
+        width: 100%;
+        display: block;
+        padding:10px 80px 10px 80px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .post-image {
+        width: 100%
+    }
+.InstagramContainerMobile {
+    display: block;
+    cursor: pointer; 
+    }
+.InstagramTextMobile {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    font-family: 'Cookie', sans-serif;
+    font-size: 36px;
+    }
+.follow-header { 
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+.followed {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: 100px; 
+    box-sizing: border-box; 
+    gap: 20px;
+}
+.sidebar{   
+    position: fixed; 
+    bottom:0; 
+    height: 70px;
+    width: 100%;  
+    background-color: white;   
+    border: unset;
+    box-sizing: border-box;
+    }
+.iconList {  
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    align-items: center;
+    border-top-width: 1px;
+    border-top-style: solid; 
+    }
+.iconContainerMobile {
+    display: none;
+    }
+.iconContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    }
+.iconContainerMobile {
+    display: none;
+}
+.burger {
+    display: none;
+}
+}
+
+@media (max-width: 450px) {
+.body {
+    margin: 0;
+}
+.InstagramContainerMobile {
+    display: block;
+    cursor: pointer; 
+}
+.follow-header { 
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.post-header {
+    width: 100%;
+}
+.sidebar{   
+    position: fixed; 
+    bottom:0; 
+    height: 70px;
+    width: 100%;
+    background-color: white;    
+    border: unset;
+    box-sizing: border-box;
+}
+.followed {
+    display: flex; 
+    width: 100%; 
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+}
+.profileContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 10px 50px;
+    }
+.iconList {  
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    align-items: center;
+    border-top-width: 1px;
+    border-top-style: solid; 
+    }
+.iconContainerMobile {
+    display: none;
+    }
+.iconContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    max-width: 100%;
+    }
+.burger {
+    display: none;
+    }
+.add-comment {
+    cursor: pointer;
+    width: 100%;    
+    padding: 0;
+    }
+.post-container {
+    padding: 5px;
+    width: 100%;
+    }
+.post-actions {
+    width: 100%;
+}
+.post-actions-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.commentInput { 
+    cursor: pointer;
+    font-family: 'instrument', sans-serif;
+    resize: vertical;
+    height: 50px;
+    max-height: 200px;
+    padding: 8px 0 8px 8px; 
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    word-wrap: break-word; 
+}  
+.showComment {
+    width: 90%
+}
+}

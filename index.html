@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/vnd.icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <script src="array.js"></script>
+    <script src="script.js"></script>
+    <title>Carogram</title>
+  </head>
+
+  <body class="body" onload="init()">
+    <main class="main-container">
+        <!-- Sidebar -->
+        <div w3-include-html="./sidebar.html"></div>
+         <!--Liste der gefolgten Profile -->
+        <div class="main-content">
+            <div class="InstagramContainerMobile"> 
+                <h1 class="InstagramTextMobile">Carogram</h1>
+            </div>
+            <div class="follow-header">
+                <span><b>Für dich</b></span>
+                <span style="color: grey;"><b>Gefolgt</b></span>
+            </div>
+            <div class="followed">
+                <div class="profileContainer">
+                    <img class="followerProfile"src="./img/profile/celine.jpg ">
+                    <span class="name">Celine</span>
+                </div>
+                <div class="profileContainer">
+                    <img class="followerProfile" src="./img/profile/berti.jpg ">
+                    <span class="name">Berti</span>
+                </div>
+                <div class="profileContainer">
+                    <img class="followerProfile" src="./img/profile/coolio.jpg">
+                    <span class="name">Coolio</span>
+                </div>
+                <div class="profileContainer">
+                    <img class="followerProfile" src="./img/profile/susi.jpg ">
+                    <span class="name">Susi</span>
+                </div>
+              </div>
+              <!--Liste der Postings -->  
+            <div id="post-container" class="post-container"></div> 
+        </div>
+           <!-- Discover -->
+           <div>
+            <div class="ownProfileContainer">
+                <img class="profileImage" src="./img/profile/Caro-Kaffee.png">
+                <p style="line-height: 1.5; padding-right: 80px;"> 
+                    <b>willerscaroline</b><br>
+                    <span style="color: grey;">Caroline Willers</span>
+                </p>
+                <a href="#" style="text-decoration: none;">follow</a>
+            </div> 
+        </div>
+    </main>
+  </body>
+</html>
